@@ -1,0 +1,20 @@
+//POINTER #1 @ $34 - STRING #1 @ $19D
+
+#VAR(INTRO, TABLE)
+#ADDTBL("INTROWRITE.TBL", INTRO)
+#ACTIVETBL(INTRO)
+
+#VAR(BIN, CUSTOMPOINTER)
+#CREATEPTR(BIN, "LINEAR", $-02000000, 32)
+
+#JMP(00000000)
+
+<ESC_CODE><$06><Wait_Time><$8C><line>
+テンカイにも ようやく<line>
+ほんとうの 平和がおとずれ<line>
+みんなたのしくくらしています<line>
+<ESC_CODE><$06><Wait_Time><$50><line>
+<ESC_CODE><$0A><Activate_Code><$01><line>
+<ESC_CODE><$06><Wait_Time><$96><ESC_CODE><$06><NEXT><line>
+<ESC_CODE><$0A><Activate_Code><$02><line>
+<ESC_CODE><$05><TEXT_END><END>

@@ -1,0 +1,16 @@
+#GAME NAME:		Densetsu no Stafy 4
+
+#BLOCK NAME:		IntroTest
+#TYPE:			NORMAL
+#METHOD:		POINTER_RELATIVE
+#POINTER TABLE START: $00000030
+#POINTER TABLE STOP:  $00000074
+#POINTER ENDIAN:		BIG
+#POINTER SIZE:			$04
+#POINTER SPACE: 		$00
+#ATLAS PTRS:		No
+#BASE POINTER:  	$00000088
+#TABLE:			BMGTESTTABLE.TBL
+#COMMENTS:		No		//start first line with //
+#END BLOCK				//remainder of comment placement
+					//is handled by control codes

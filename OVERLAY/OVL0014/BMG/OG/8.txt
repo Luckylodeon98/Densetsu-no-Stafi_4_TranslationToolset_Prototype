@@ -1,0 +1,41 @@
+//POINTER #8 @ $50 - STRING #8 @ $BB0
+
+#VAR(INTRO, TABLE)
+#ADDTBL("INTROWRITE.TBL", INTRO)
+#ACTIVETBL(INTRO)
+
+#VAR(BIN, CUSTOMPOINTER)
+#CREATEPTR(BIN, "LINEAR", $-02000000, 32)
+
+#JMP(00000000)
+
+<ESC_CODE><$06><TextPos><$12><line>
+そのモナムールストーンが<line>
+なにものかに<line>
+ぬすまれてしまったのです!<line>
+<ESC_CODE><$06><TextPos><$78><line>
+<ESC_CODE><$0A><TextAlign><$01><line>
+<ESC_CODE><$06><TextPos><$3C><ESC_CODE><$06><Scroll><line>
+<ESC_CODE><$0A><TextAlign><$02><ESC_CODE><$06><TextPos><$01><line>
+はんにんは モナムールストーンの<line>
+きょだいな力を使って 国中に<line>
+わざわいを よびよせ<line>
+<ESC_CODE><$06><TextPos><$78><line>
+<ESC_CODE><$0A><TextAlign><$01><line>
+<ESC_CODE><$06><TextPos><$3C><ESC_CODE><$06><Scroll><line>
+<ESC_CODE><$0A><TextAlign><$02><ESC_CODE><$06><TextPos><$01><line>
+平和だったアミー王国では<line>
+ワルモノが あばれまわり<line>
+みんな こまっています<line>
+<ESC_CODE><$06><TextPos><$78><line>
+<ESC_CODE><$0A><TextAlign><$01><line>
+<ESC_CODE><$06><TextPos><$3C><ESC_CODE><$06><Scroll><line>
+<ESC_CODE><$0A><TextAlign><$02><ESC_CODE><$06><TextPos><$01><line>
+はんにんには きっと<line>
+じゃあくなたくらみがあるに<line>
+ちがいありません!<line>
+<ESC_CODE><$06><TextPos><$78><line>
+<ESC_CODE><$0A><TextAlign><$01><line>
+<ESC_CODE><$06><TextPos><$3C><ESC_CODE><$06><Scroll><line>
+<ESC_CODE><$0A><TextAlign><$03><line>
+<ESC_CODE><$05><Clear?><END>

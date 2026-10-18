@@ -1,0 +1,22 @@
+//POINTER #9 @ $54 - STRING #9 @ $D97
+
+#VAR(INTRO, TABLE)
+#ADDTBL("INTROWRITE.TBL", INTRO)
+#ACTIVETBL(INTRO)
+
+#VAR(BIN, CUSTOMPOINTER)
+#CREATEPTR(BIN, "LINEAR", $-02000000, 32)
+
+#JMP(00000000)
+
+<ESC_CODE><$0A><Activate_Code><$01><line>
+<ESC_CODE><$06><Wait_Time><$28><line>
+<ESC_CODE><$0A><Activate_Code><$02><line>
+<ESC_CODE><$06><TextBoxStart><$00><ESC_CODE><$06><RedNameON><diamond>マテル<line>
+<ESC_CODE><$06><RedNameOFF><line>
+「おしろにまで ワルモノが<line>
+ 入りこみ メイドをしていた私は<line>
+ どうにかにげ出せましたが…」<line>
+<ESC_CODE><$06><Wait_Time><$B4><ESC_CODE><$06><NEXT><line>
+<ESC_CODE><$0A><Activate_Code><$03><line>
+<ESC_CODE><$05><TEXT_END><END>

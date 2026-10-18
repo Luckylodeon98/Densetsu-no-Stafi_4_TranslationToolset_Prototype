@@ -1,0 +1,40 @@
+//POINTER #4 @ $40 - STRING #4 @ $421
+
+#VAR(INTRO, TABLE)
+#ADDTBL("INTROWRITE.TBL", INTRO)
+#ACTIVETBL(INTRO)
+
+#VAR(BIN, CUSTOMPOINTER)
+#CREATEPTR(BIN, "LINEAR", $-02000000, 32)
+
+#JMP(00000000)
+
+<ESC_CODE><$0A><TextAlign><$01><line>
+<ESC_CODE><$0A><ClearBoxText><$03><ESC_CODE><$0A><TextAlign><$0A><line>
+<ESC_CODE><$06><TextBoxStart><$00><ESC_CODE><$06><RedNameON><diamond>キョロスケ<line>
+<ESC_CODE><$06><RedNameOFF><line>
+「て テンカイの入り口に<line>
+ 見たことのない 女の子が<line>
+ たおれてたんだよ!!」<line>
+<ESC_CODE><$06><TextPos><$B4><ESC_CODE><$06><Scroll><line>
+<ESC_CODE><$0A><ClearBoxText><$02><ESC_CODE><$0A><TextAlign><$0A><ESC_CODE><$0A><TextAlign><$04><line>
+<ESC_CODE><$06><TextBoxStart><$00><ESC_CODE><$06><RedNameON><diamond>スタピー<line>
+<ESC_CODE><$06><RedNameOFF><line>
+「なんやて? 女の子!?<line>
+ ハマグリ! 自分が<line>
+ いじめたんちゃうやろな!」<line>
+<ESC_CODE><$06><TextPos><$B4><ESC_CODE><$06><Scroll><line>
+<ESC_CODE><$0A><ClearBoxText><$03><ESC_CODE><$0A><TextAlign><$0A><line>
+<ESC_CODE><$06><TextBoxStart><$00><ESC_CODE><$06><RedNameON><diamond>キョロスケ<line>
+<ESC_CODE><$06><RedNameOFF><line>
+「あ アホかっ!!<line>
+ ほんとに たおれてたんだって!」<line>
+<ESC_CODE><$06><TextPos><$B4><ESC_CODE><$06><Scroll><line>
+<ESC_CODE><$0A><ClearBoxText><$00><ESC_CODE><$0A><TextAlign><$0A><line>
+<ESC_CODE><$06><TextBoxStart><$00><ESC_CODE><$06><RedNameON><diamond>パパスタ<line>
+<ESC_CODE><$06><RedNameOFF><line>
+「とりあえず すぐ<line>
+ てあてして あげるんじゃ」<line>
+<ESC_CODE><$06><TextPos><$78><ESC_CODE><$06><Scroll><line>
+<ESC_CODE><$0A><TextAlign><$03><line>
+<ESC_CODE><$05><Clear?><END>

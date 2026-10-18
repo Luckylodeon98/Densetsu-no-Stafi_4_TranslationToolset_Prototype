@@ -1,0 +1,27 @@
+//POINTER #3 @ $3C - STRING #3 @ $338
+
+#VAR(INTRO, TABLE)
+#ADDTBL("INTROWRITE.TBL", INTRO)
+#ACTIVETBL(INTRO)
+
+#VAR(BIN, CUSTOMPOINTER)
+#CREATEPTR(BIN, "LINEAR", $-02000000, 32)
+
+#JMP(00000000)
+
+<ESC_CODE><$06><TextPos><$77><ESC_CODE><$0A><TextAlign><$05><ESC_CODE><$06><TextPos><$01><line>
+やって来たのは<line>
+スタフィーとスタピーのともだち<line>
+キョロスケです<line>
+<ESC_CODE><$06><TextPos><$50><line>
+<ESC_CODE><$0A><TextAlign><$01><line>
+<ESC_CODE><$06><TextPos><$50><ESC_CODE><$06><Scroll><line>
+<ESC_CODE><$0A><TextAlign><$03><ESC_CODE><$06><TextPos><$01><line>
+ずいぶん 大あわてです<line>
+いったい<line>
+どうしたのでしょう?<line>
+<ESC_CODE><$06><TextPos><$50><line>
+<ESC_CODE><$0A><TextAlign><$01><line>
+<ESC_CODE><$06><TextPos><$50><ESC_CODE><$06><Scroll><line>
+<ESC_CODE><$0A><TextAlign><$04><line>
+<ESC_CODE><$05><Clear?><END>

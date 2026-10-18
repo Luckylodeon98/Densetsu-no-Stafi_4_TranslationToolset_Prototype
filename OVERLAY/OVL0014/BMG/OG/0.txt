@@ -1,0 +1,32 @@
+//BLOCK #000 NAME:		IntroTest
+
+//POINTER #0 @ $30 - STRING #0 @ $89
+
+#VAR(INTRO, TABLE)
+#ADDTBL("INTROWRITE.TBL", INTRO)
+#ACTIVETBL(INTRO)
+
+#VAR(BIN, CUSTOMPOINTER)
+#CREATEPTR(BIN, "LINEAR", $-02000000, 32)
+
+#JMP(00000000)
+
+<ESC_CODE><$0A><TextAlign><$03><line>
+<ESC_CODE><$06><TextPos><$50><line>
+<ESC_CODE><$0A><TextAlign><$03><line>
+<ESC_CODE><$06><TextPos><$64><line>
+大きな海の そらたかく<line>
+くもの上に テンカイという<line>
+平和な 王国がありました<line>
+<ESC_CODE><$06><TextPos><$50><line>
+<ESC_CODE><$0A><TextAlign><$01><line>
+<ESC_CODE><$06><TextPos><$96><ESC_CODE><$06><Scroll><line>
+<ESC_CODE><$0A><TextAlign><$02><line>
+<ESC_CODE><$06><TextPos><$3C><line>
+テンカイの王子スタフィーと<line>
+その いもうとスタピーが<line>
+きょだいな あくをたおし…<line>
+<ESC_CODE><$06><TextPos><$50><line>
+<ESC_CODE><$0A><TextAlign><$01><line>
+<ESC_CODE><$06><TextPos><$96><ESC_CODE><$06><Scroll><line>
+<ESC_CODE><$05><Clear?><END>

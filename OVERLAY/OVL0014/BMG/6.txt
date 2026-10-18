@@ -1,0 +1,55 @@
+//POINTER #6 @ $48 - STRING #6 @ $708
+
+#VAR(INTRO, TABLE)
+#ADDTBL("INTROWRITE.TBL", INTRO)
+#ACTIVETBL(INTRO)
+
+#VAR(BIN, CUSTOMPOINTER)
+#CREATEPTR(BIN, "LINEAR", $-02000000, 32)
+
+#JMP(00000000)
+
+<ESC_CODE><$0A><Activate_Code><$01><line>
+<ESC_CODE><$0A><ClearBoxText><$00><ESC_CODE><$0A><Activate_Code><$0A><line>
+<ESC_CODE><$06><TextBoxStart><$00><ESC_CODE><$06><RedNameON><diamond>パパスタ<line>
+<ESC_CODE><$06><RedNameOFF><line>
+「だいじょうぶかね? ムスメさん<line>
+ おぬし このへんの<line>
+ 海では見かけないかおじゃが……」<line>
+<ESC_CODE><$06><Wait_Time><$B4><ESC_CODE><$06><NEXT><line>
+<ESC_CODE><$0A><Activate_Code><$03><line>
+<ESC_CODE><$06><TextBoxStart><$00><ESC_CODE><$06><RedNameON><diamond>???<line>
+<ESC_CODE><$06><RedNameOFF><line>
+「たすけてくださって<line>
+ ありがとうございます」<line>
+<ESC_CODE><$06><Wait_Time><$B4><ESC_CODE><$06><NEXT><line>
+<ESC_CODE><$0A><Activate_Code><$05><line>
+<ESC_CODE><$06><TextBoxStart><$00><ESC_CODE><$06><RedNameON><diamond>マテル<line>
+<ESC_CODE><$06><RedNameOFF><line>
+「私は アミー王国から<line>
+ やってきた マテルと<line>
+ いうものです」<line>
+<ESC_CODE><$06><Wait_Time><$B4><ESC_CODE><$06><NEXT><line>
+<ESC_CODE><$0A><ClearBoxText><$01><ESC_CODE><$0A><Activate_Code><$0A><line>
+<ESC_CODE><$06><TextBoxStart><$00><ESC_CODE><$06><RedNameON><diamond>ママスタ<line>
+<ESC_CODE><$06><RedNameOFF><line>
+「まあ! アミー王国ですって?<line>
+ ずいぶん とおくから<line>
+ いらしたのね」<line>
+<ESC_CODE><$06><Wait_Time><$B4><ESC_CODE><$06><NEXT><line>
+<ESC_CODE><$0A><ClearBoxText><$00><ESC_CODE><$0A><Activate_Code><$0A><line>
+<ESC_CODE><$06><TextBoxStart><$00><ESC_CODE><$06><RedNameON><diamond>パパスタ<line>
+<ESC_CODE><$06><RedNameOFF><line>
+「そんな はるかとおい国から<line>
+ このテンカイに いったい<line>
+ なんの用じゃね?」<line>
+<ESC_CODE><$06><Wait_Time><$B4><ESC_CODE><$06><NEXT><line>
+<ESC_CODE><$0A><Activate_Code><$05><line>
+<ESC_CODE><$06><TextBoxStart><$00><ESC_CODE><$06><RedNameON><diamond>マテル<line>
+<ESC_CODE><$06><RedNameOFF><line>
+「みなさん おねがいです!<line>
+ 私の国を… アミー王国を<line>
+ すくってください!」<line>
+<ESC_CODE><$06><Wait_Time><$78><ESC_CODE><$06><NEXT><line>
+<ESC_CODE><$0A><Activate_Code><$04><line>
+<ESC_CODE><$05><TEXT_END><END>

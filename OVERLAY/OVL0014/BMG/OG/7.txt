@@ -1,0 +1,35 @@
+//POINTER #7 @ $4C - STRING #7 @ $A27
+
+#VAR(INTRO, TABLE)
+#ADDTBL("INTROWRITE.TBL", INTRO)
+#ACTIVETBL(INTRO)
+
+#VAR(BIN, CUSTOMPOINTER)
+#CREATEPTR(BIN, "LINEAR", $-02000000, 32)
+
+#JMP(00000000)
+
+<ESC_CODE><$06><TextPos><$3C><line>
+私たちのアミー王国には<line>
+『モナムールストーン』という<line>
+ひほうがあります<line>
+<ESC_CODE><$06><TextPos><$78><line>
+<ESC_CODE><$0A><TextAlign><$01><line>
+<ESC_CODE><$06><TextPos><$3C><ESC_CODE><$06><Scroll><line>
+<ESC_CODE><$0A><TextAlign><$02><ESC_CODE><$06><TextPos><$01><line>
+モナムールストーンは大むかしから<line>
+私たちのまもりがみとして<line>
+たいせつにうけつがれていて・・・<line>
+<ESC_CODE><$06><TextPos><$78><line>
+<ESC_CODE><$0A><TextAlign><$01><line>
+<ESC_CODE><$06><TextPos><$3C><ESC_CODE><$06><Scroll><line>
+<ESC_CODE><$0A><TextAlign><$02><ESC_CODE><$06><TextPos><$01><line>
+私たちは モナムールストーンに<line>
+まもられて なかよく平和に<line>
+くらしていました<line>
+<ESC_CODE><$06><TextPos><$78><line>
+<ESC_CODE><$0A><TextAlign><$01><line>
+<ESC_CODE><$06><TextPos><$3C><ESC_CODE><$06><Scroll><line>
+<ESC_CODE><$0A><TextAlign><$03><line>
+<ESC_CODE><$06><TextPos><$3C><line>
+<ESC_CODE><$05><Clear?><END>

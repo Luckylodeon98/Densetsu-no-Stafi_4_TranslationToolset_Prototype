@@ -1,0 +1,10 @@
+Unused areas in Arm9 Binary
+0207A9D8-0207AB17
+
+Outside ARM9 Binary
+Possible Areas to add data too… -0212541F
+
+(Potential Placement for KyoroCalls, ItemPickup, DoorRiddles.)
+020F0E10-0212147B = 198251 bytes
+
+

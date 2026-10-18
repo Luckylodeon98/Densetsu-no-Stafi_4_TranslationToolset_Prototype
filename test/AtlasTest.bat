@@ -1,0 +1,18 @@
+Atlas OVL14/BMG/0.bin OVL14/BMG/0.txt
+Atlas OVL14/BMG/1.bin OVL14/BMG/1.txt
+Atlas OVL14/BMG/2.bin OVL14/BMG/2.txt
+Atlas OVL14/BMG/3.bin OVL14/BMG/3.txt
+Atlas OVL14/BMG/4.bin OVL14/BMG/4.txt
+Atlas OVL14/BMG/5.bin OVL14/BMG/5.txt
+Atlas OVL14/BMG/6.bin OVL14/BMG/6.txt
+Atlas OVL14/BMG/7.bin OVL14/BMG/7.txt
+Atlas OVL14/BMG/8.bin OVL14/BMG/8.txt
+Atlas OVL14/BMG/9.bin OVL14/BMG/9.txt
+Atlas OVL14/BMG/10.bin OVL14/BMG/10.txt
+Atlas OVL14/BMG/11.bin OVL14/BMG/11.txt
+Atlas OVL14/BMG/12.bin OVL14/BMG/12.txt
+Atlas OVL14/BMG/13.bin OVL14/BMG/13.txt
+Atlas OVL14/BMG/14.bin OVL14/BMG/14.txt
+Atlas OVL14/BMG/15.bin OVL14/BMG/15.txt
+Atlas OVL14/BMG/16.bin OVL14/BMG/16.txt
+pause

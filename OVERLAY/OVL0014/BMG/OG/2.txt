@@ -1,0 +1,27 @@
+//POINTER #2 @ $38 - STRING #2 @ $223
+
+#VAR(INTRO, TABLE)
+#ADDTBL("INTROWRITE.TBL", INTRO)
+#ACTIVETBL(INTRO)
+
+#VAR(BIN, CUSTOMPOINTER)
+#CREATEPTR(BIN, "LINEAR", $-02000000, 32)
+
+#JMP(00000000)
+
+<ESC_CODE><$0A><TextAlign?><$01><line>
+<ESC_CODE><$0A><TextAlign><$01><line>
+<ESC_CODE><$06><TextBoxStart><$00><ESC_CODE><$06><RedNameON><diamond>キョロスケ<line>
+<ESC_CODE><$06><RedNameOFF><line>
+「うわあああーーー!!!!<line>
+ た たいへんだーー!」<line>
+<ESC_CODE><$06><TextPos><$B4><ESC_CODE><$06><Scroll><line>
+<ESC_CODE><$0A><ClearBoxText><$00><ESC_CODE><$0A><TextAlign><$0A><line>
+<ESC_CODE><$06><TextBoxStart><$00><ESC_CODE><$06><RedNameON><diamond>パパスタ<line>
+<ESC_CODE><$06><RedNameOFF><line>
+「キョロスケではないか<line>
+ ど どうしたんじゃ<line>
+ あそびに来たんじゃないのか?」<line>
+<ESC_CODE><$06><TextPos><$78><ESC_CODE><$06><Scroll><line>
+<ESC_CODE><$0A><TextAlign><$02><line>
+<ESC_CODE><$05><Clear?><END>
