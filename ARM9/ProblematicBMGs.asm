@@ -291,6 +291,12 @@ Checkpoint4:
 ARM9_BMG_02_POINTER:
 	.word ARM9_BMG_02
 ;-------------------------------------------
+;Another Checkpoint:							;<--------------------- That's just an example nothing here is added!
+;	ldr			r1, [another_bmg_pointer]
+;	cmp			r0, r1
+;	BEQ			AnotherProblematicBMG
+;	b			Checkpoint5
+;-------------------------------------------
 Checkpoint5:
 	ldr			r1,	[OVL19_BMG01_POINTER]
 	cmp			r0, r1
@@ -298,6 +304,7 @@ Checkpoint5:
 	pop		   {r1-r3, r4}
 	bx 			lr
 ;-------------------------------------------
+
 .align 4
 OVL19_BMG01_POINTER:
 	.word OVL19_BMG_01
@@ -319,6 +326,11 @@ LocalAddressFunc:
 	ldr			r1, [r1]
 	mov			r2, r1
 	b			DecompressAndRelocate
+;AnotherProblematicBMG:
+;	ldr			r1, [AnotherPointer]
+;	ldr			r1, [r1]
+;	mov			r2, r1
+;	b			DecompressAndRelocate
 DecompressAndRelocate:
 	SWI			0x11 ;Decompress LZSS
 	ldr			r3, [LocalAddressSavePointer]
@@ -341,10 +353,14 @@ AbilitiesStuffandDescriptionsPointer:
 .align 4
 LocalAddressSavePointer:
 	.word LocalAddressSave
+;.align 4					;<------------- Example code, not functional!!!
+;AnotherPointer:
+;	.word 0x02[EnterNewLocationHere]
 .align 4
 LocalAddressSave:
 .word 0x00000000
 .align 4
+;Imported BMG files
 ARM9_BMG_00:
 .import "BMG/ARM9_0/ARM9_BMG0_ANSWERCARD_RIDDLES_0207BA3C.BMG"
 .align 4

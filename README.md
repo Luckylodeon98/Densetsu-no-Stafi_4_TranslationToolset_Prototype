@@ -31,6 +31,11 @@ Or it could be configured to have messages arranged in a certain order.
 You'd need to make modified version of these files for new text to show up in game.
 The BMGmaker template should give you as much info as you need to make your own bmg files.
 
+Heads up!!!!!!!!!
+There are BMG files that are in Arm9 and other overlays that would have to be compressed in order to put them into the game.
+There should be a list of them in the problematicbmgs text file and ProblematicBMGs.asm file in the ARM9 folder.
+
+
 
 
 
@@ -43,6 +48,9 @@ Cartographer is the reverse of Atlas. Instead of inserting new text into the rom
 
 Armips
 Armips is basically the brains of operation, it helps calculate pointers for various things like text and images, or help create new files such as the BMGmaker Template used to make BMG files. It can also inject new code if you know what you are doing.
+
+lzss.exe
+This compresses the problematic bmg files to be stored into the arm9 binary.
 
 
 
