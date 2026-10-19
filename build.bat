@@ -20,7 +20,7 @@ copy OVERLAY\OVL0011\overlay_0011.bin unpacked\overlay\overlay_0011.bin
 copy OVERLAY\OVL0012\overlay_0012.bin unpacked\overlay\overlay_0012.bin
 copy OVERLAY\OVL0013\overlay_0013.bin unpacked\overlay\overlay_0013.bin
 copy OVERLAY\OVL0014\overlay_0014.bin unpacked\overlay\overlay_0014.bin
-copy OVERLAY\OVL0014\BMG\OG\bmg1_items.bin unpacked\data\BMG\bmg1_items.bin
+::copy OVERLAY\OVL0014\BMG\OG\bmg1_items.bin unpacked\data\BMG\bmg1_items.bin
 copy OVERLAY\OVL0015\overlay_0015.bin unpacked\overlay\overlay_0015.bin
 copy OVERLAY\OVL0016\overlay_0016.bin unpacked\overlay\overlay_0016.bin
 copy OVERLAY\OVL0017\overlay_0017.bin unpacked\overlay\overlay_0017.bin
@@ -42,6 +42,8 @@ copy OVERLAY\OVL0032\overlay_0032.bin unpacked\overlay\overlay_0032.bin
 copy OVERLAY\OVL0033\overlay_0033.bin unpacked\overlay\overlay_0033.bin
 copy ARM9\arm9.bin unpacked\arm9.bin
 copy OVERLAY\y9.bin unpacked\y9.bin
+::From this point forward add any additional file you want to modify by adding it in this format "copy (One of the main folders in the setup (ARM9, OVERLAY, or FILESYSTEM))\foldername\file unpacked\foldername\file"
+:: (example) copy FILESYSTEM\Cell\clear_high_obj_l.NANR unpacked\Cell\clear_high_obj_l.NANR
 
 ndstool -c ROM\OUTPUT.nds -9 unpacked\arm9.bin -7 unpacked\arm7.bin -y9 unpacked\y9.bin -y7 unpacked\y7.bin -d unpacked\data -y unpacked\overlay -t unpacked\banner.bin -h unpacked\header.bin
 pause

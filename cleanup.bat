@@ -35,3 +35,4 @@ copy unpacked\overlay\overlay_0032.bin OVERLAY\OVL0032\overlay_0032.bin
 copy unpacked\overlay\overlay_0033.bin OVERLAY\OVL0033\overlay_0033.bin
 copy unpacked\arm9.bin ARM9\arm9.bin
 copy unpacked\y9.bin OVERLAY\y9.bin
+::From this point forward add any additional file you want to modify by adding it in this format "copy unpacked\foldername\file (One of the main folders in the setup (ARM9, OVERLAY, or FILESYSTEM))\foldername\file"
